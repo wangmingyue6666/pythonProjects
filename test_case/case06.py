@@ -7,6 +7,7 @@ from api_key.api import ApiDemo
 
 from ddt import ddt, file_data
 
+from config_manager.config_read import configRead
 
 '''
     读取ini文件的数据
@@ -21,12 +22,10 @@ class CaseDemo(unittest.TestCase):
         # 第一步:定义jsessionId变量,赋值为None
         cls.SESSION_ID = None
 
-        # 实例化configparser
-        cf = configparser.ConfigParser()
-        # 读取文件
-        cf.read('../data/config.ini')
-        # 获取数据
-        CaseDemo.url = cf.get('DEFAULT', 'url')
+        # 实例化配置管理类
+        cls.cr = configRead()
+        # 调用获取url的方法
+        cls.url = cls.cr.get_url()
 
     # 登录接口
     @file_data('../data/user1.yaml')

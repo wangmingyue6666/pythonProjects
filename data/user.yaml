@@ -1,0 +1,12 @@
+-
+  data:
+    USER_NAME: wmy
+    PASSWORD: Wang@123
+-
+  data:
+    USER_NAME: wmy
+    PASSWORD: Wang@
+-
+  data:
+    USER_NAME: wmy
+    PASSWORD:

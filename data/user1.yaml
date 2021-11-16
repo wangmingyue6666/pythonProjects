@@ -1,0 +1,15 @@
+-
+  data:
+    USER_NAME: wmy
+    PASSWORD: Wang@123
+  txt: success
+#-
+#  data:
+#    USER_NAME: wmy
+#    PASSWORD: Wang@
+#  txt: error
+#-
+#  data:
+#    USER_NAME: wmy
+#    PASSWORD: 123
+#  txt: error
